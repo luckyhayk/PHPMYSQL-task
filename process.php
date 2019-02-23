@@ -12,7 +12,7 @@ require_once('connection.php');
 
             if(mysqli_fetch_assoc($result)){
                 $_SESSION['User']=$_POST['username'];
-                header("location:welcome.php");
+                header("location:messageform/welcome.php");
             }
             else{
                 header("location:index.php?Invalid= Please Enter Correct Password or Username");
@@ -24,3 +24,4 @@ require_once('connection.php');
     }
 
 
+?>
